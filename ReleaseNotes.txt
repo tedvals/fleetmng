@@ -1,0 +1,39 @@
+
+Version 2.4.1 [2012/04/20]
+- NEW: Added additional defined Status Codes.
+- NEW: Ability to delete old events by DeviceGroup (as well as by Device). Also
+       checks the very last event when deleting old events.  If the last event is
+       prior to the deleted time range, the last event will be retained.
+- NEW: Added additional columns types to EventDataLayout.java and FieldLayout.java.
+- NEW: Added ability to hide "Unique ID", "SIM#", on Device Admin page via ACLs.
+- NEW: Added "userInfo.showAccessControlList" property to hide ACL list on User Admin.
+- NEW: Added field "simID" to Device record.
+- NEW: Added command-line option to delete old EventData records by device group.
+- NEW: Added command-line support for displaying "events-per-second" in EventData.
+- NEW: Made GISGraphy street address lookup optional.
+- NEW: Added Mapquest OSM/Arial lay support to OpenLayers MapProvider support. (See
+       "openLayers" MapProvider definition for details.)
+- NEW: Added "Event Count by Day" device detail report.
+- DCS: gprmc - update to be able to handle several protocol formats simultaneously.
+- DCS: gc101 - fixed NPE issue when invalid $GPRMC record is parsed.
+- DCS: template - "parseInsertRecord_ASCII_02" now allows using AccountID as MobileID.
+- DCS: tk10x - added digital input change simulated events.
+- FIX: Fixed typo - changed property key "groupInfo.deviceLisSortBy" name to 
+       "groupInfo.deviceListSortBy".
+
+-----------------------------------------------------------------------------------
+
+Project Home Page:
+    http://www.opengts.org
+
+Download Latest Version from SourceForge:
+    https://sourceforge.net/projects/opengts/
+
+Documentation (installation/configuration, tutorials, FAQ):
+    http://www.opengts.org/FAQ.html
+    http://www.opengts.org/documentation.html
+
+GTS Enterprise:
+    http://www.geotelematic.com/gts.html
+    http://www.geotelematic.com/documentation.html
+
